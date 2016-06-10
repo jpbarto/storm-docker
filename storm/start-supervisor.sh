@@ -1,3 +1,6 @@
+# docker net aliases mean these env vars dont get defined, give them defaults
+${ZK_PORT_2181_TCP_ADDR:=zk:2181}
+${NIMBUS_PORT_6627_TCP_ADDR:=nimbus:6627}
 sed -i -e "s/%zookeeper%/$ZK_PORT_2181_TCP_ADDR/g" $STORM_HOME/conf/storm.yaml
 sed -i -e "s/%nimbus%/$NIMBUS_PORT_6627_TCP_ADDR/g" $STORM_HOME/conf/storm.yaml
 
