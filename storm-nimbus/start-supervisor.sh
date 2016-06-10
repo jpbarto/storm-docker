@@ -6,4 +6,4 @@ sed -i -e "s/%nimbus%/$IP/g" $STORM_HOME/conf/storm.yaml
 
 echo "storm.local.hostname:" ${IP} >> $STORM_HOME/conf/storm.yaml
 
-supervisord
+supervisord -c /etc/supervisor/supervisord.conf

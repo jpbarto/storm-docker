@@ -17,5 +17,5 @@ ADD start-supervisor.sh /usr/bin/start-supervisor.sh
 
 RUN apk update && apk add -u python py-pip
 RUN pip install supervisor
-RUN mkdir -p /etc/supervisor/conf.d && touch /etc/supervisor/supervisord.conf
-RUN echo [supervisord] | tee -a /etc/supervisor/supervisord.conf ; echo nodaemon=true | tee -a /etc/supervisor/supervisord.conf
+RUN mkdir -p /etc/supervisor/conf.d
+ADD supervisord.conf /etc/supervisor/supervisord.conf
