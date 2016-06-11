@@ -1,4 +1,4 @@
-FROM jpbarto/storm
+FROM jpbarto/storm-base
 MAINTAINER jpbarto
 
 RUN /usr/bin/config-supervisord.sh nimbus
