@@ -1,4 +1,4 @@
-FROM jpbarto/storm-base
+FROM jpbarto/storm
 MAINTAINER jpbarto
 
 EXPOSE 6700

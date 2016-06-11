@@ -1,4 +1,4 @@
-FROM jpbarto/storm-base
+FROM jpbarto/storm
 MAINTAINER jpbarto
 RUN /usr/bin/config-supervisord.sh ui
 
